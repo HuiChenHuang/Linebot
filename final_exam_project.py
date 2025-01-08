@@ -44,7 +44,7 @@ app = Flask(__name__)
 configuration = Configuration(access_token="C56ATiqV/wGsPnldACk/NzkVn+zX0eRVe0zpJ4o6BFcCoDMyvM43+hakuKdozDXxr6bIf4E61mXLqy4qYD1e7pYPidLJOOn7rON7RCnKHDvlcdnspyGrisn3CO4dpF0JX0ldbecX5TbruBgUoE44WQdB04t89/1O/w1cDnyilFU=")
 handler = WebhookHandler("58f543c62c2e098c9d621a823c7c486d")
 #接收 LINE 的資訊 #設定LineBot的Webhook路由
-@app.route('/')
+@app.route('/callback', methods=['POST'])
 def callback():
     # get X-Line-Signature header value
     signature = request.headers['X-Line-Signature'] 
