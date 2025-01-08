@@ -1,0 +1,7 @@
+base64
+Pillow
+requests
+Flask
+mysql-connector-python
+line-bot-sdk==3.0.0  # 請確認您所使用的 LINE SDK 版本
+pyimgur
