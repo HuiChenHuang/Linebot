@@ -4,3 +4,4 @@ Flask
 mysql-connector-python
 line-bot-sdk==3.13.0  # 請確認您所使用的 LINE SDK 版本
 pyimgur
+gunicorn
